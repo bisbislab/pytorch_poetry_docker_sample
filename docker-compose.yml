@@ -1,0 +1,15 @@
+version: "3"
+services: 
+    pytorch:
+        build: .
+        working_dir: /workspace
+        tty: true
+        volumes: 
+            - ./:/workspace:cached
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          capabilities: [gpu]
+        shm_size: "2gb"
