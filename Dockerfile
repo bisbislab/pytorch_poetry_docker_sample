@@ -14,6 +14,7 @@ RUN apt-get update &&\
 RUN apt-get -y install --no-install-recommends \
         curl \
         git \
+        libgl1-mesa-dev \
         python3.10
 
 # Python環境設定

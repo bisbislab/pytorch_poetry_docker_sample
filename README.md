@@ -10,7 +10,7 @@
 
 - PoetryとPyTorchの相性が悪いので、今後の更新次第では環境構築に失敗する可能性があります。
 
-## 環境
+## 動作環境
 
 以下の環境で動作確認済み
 
@@ -35,7 +35,7 @@
     
 3. VSCodeの拡張機能Remote Developmentをインストール
 
-    - Remote DevelopmentはWSL, Dev Containers, Remote - SSHをまとめてインストールしてくれます。
+    - Remote DevelopmentはWSL, Dev Containers, Remote - SSHの3つの拡張機能をまとめてインストールしてくれます。
     
 4. Remote - SSHを使って2でcloneしたサーバー上のpytorch_poetry_docker_sampleフォルダを開く
 
