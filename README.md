@@ -83,3 +83,11 @@
 
 - Dev Containersで起動することで保存するたびに自動でフォーマットがかかります。
 - 各種設定は [pyproject.toml](/pyproject.toml), [devcontainer.json](/.devcontainer/devcontainer.json) を確認してください。
+
+## 参考文献
+
+- [NVIDIA container toolkitを使って、dockerのコンテナ上でcudaを動かす](https://qiita.com/Hiroaki-K4/items/c1be8adba18b9f0b4cef)
+
+- [任意のCUDAバージョンのPyTorchをPoetryでインストールする](https://zenn.dev/yag_ays/articles/a6c84622f558ee)
+
+- [Add a non-root user to a container (Dev Containers 公式ドキュメント)](https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user)
