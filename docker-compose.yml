@@ -1,7 +1,12 @@
 version: "3"
 services: 
     pytorch:
-        build: .
+        build:
+            context: .
+            args:
+                - USER_NAME=${USER_NAME}
+                - USER_UID=${USER_UID}
+                - USER_GID=${USER_GID}
         working_dir: /workspace
         tty: true
         volumes: 
