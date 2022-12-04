@@ -39,11 +39,32 @@
     
 4. Remote - SSHを使って2でcloneしたサーバー上のpytorch_poetry_docker_sampleフォルダを開く
 
-5. Dev Containersを使ってコンテナ環境に入る
+5. 現在ログイン中のIDなどを`.env`に書き込む
+    
+    - 以下のコマンドでuser_name, uid, gidを調べる
+    
+        ```
+        $ id
+        ```
+        
+        出力例
+        ```
+        uid=9999(user_name) gid=9999(group_name) groups=9999(group_name)
+        ```
+
+    - `.env.template`をコピペして`.env`を作成して先ほど調べたuser_name, uid, gidを記述
+
+        ```
+        USER_NAME=user_name
+        USER_UID=9999
+        USER_GID=9999
+        ```
+
+6. Dev Containersを使ってコンテナ環境に入る
 
     - ビルドに5分くらいかかります。
 
-6. PyTorchでCUDAが使えるか確認
+7. PyTorchでCUDAが使えるか確認
 
     - main.pyはCUDAが利用可能か判定するコードです。
 
