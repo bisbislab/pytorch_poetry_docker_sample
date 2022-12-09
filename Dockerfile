@@ -10,7 +10,7 @@ ARG USER_UID=${USER_UID}
 ARG USER_GID=${USER_GID}
 
 WORKDIR /workspace
-COPY pyproject.toml poetry.lock /workspace
+COPY pyproject.toml poetry.lock /workspace/
 
 RUN groupadd --gid $USER_GID $USER_NAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USER_NAME && \
@@ -18,7 +18,7 @@ RUN groupadd --gid $USER_GID $USER_NAME && \
     apt-get -y install --no-install-recommends locales && \
     localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 && \
     apt-get -y install --no-install-recommends software-properties-common && \
-    add-apt-repository ppa:deadsnakes/ppa -y && \
+    add-apt-repository "ppa:deadsnakes/ppa" -y && \
     apt-get -y install --no-install-recommends \
         curl \
         git \
