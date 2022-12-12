@@ -52,7 +52,7 @@
         uid=9999(user_name) gid=9999(group_name) groups=9999(group_name)
         ```
 
-    - `.env.template`をコピペして`.env`を作成して先ほど調べたuser_name, uid, gidを記述
+    - `.env.example`をコピペして`.env`を作成して先ほど調べたuser_name, uid, gidを記述
 
         ```
         USER_NAME=user_name
